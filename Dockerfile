@@ -1,4 +1,4 @@
-FROM ghost:alpine
+FROM ghost:5.8.3-alpine
 WORKDIR /var/lib/ghost
 
 # add labels
