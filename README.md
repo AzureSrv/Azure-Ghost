@@ -1,7 +1,13 @@
-# Ghost (Azure Edition)
+# Ghost (Posts Edition)
 
-This is my version of Ghost CMS, with my plugins compiled into it.
+![Test](https://img.shields.io/github/workflow/status/azuresrv/posts-ghost/Update%20From%20Upstream?logo=GitHub%20Actions&logoColor=white)
 
-This repo is based off of https://github.com/wunderhund/ghost-s3
+This is my distribution of Ghost CMS, with my homelab's plugins compiled into it. it is based off of `ghost:alpine` and updates nightly at 4 AM if an upstream update is available.
 
-Will update this README later. :)
+## Installed Plugins
+
+|Name|Purpose|
+|:-|:-|
+|**[ghost-s3-compat]**|Integration with Amazon S3/CloudFront to store and host images|
+
+[ghost-s3-compat]: https://github.com/spanishdict/ghost-s3-compat
