@@ -8,6 +8,6 @@ This is my distribution of Ghost CMS, with my homelab's plugins compiled into it
 
 |Name|Purpose|
 |:-|:-|
-|**[ghost-s3-compat]**|Integration with Amazon S3/CloudFront to store and host images|
+|**[ghost-storage-adapter-s3]**|Integration with Amazon S3/CloudFront to store and host images|
 
-[ghost-s3-compat]: https://github.com/spanishdict/ghost-s3-compat
+[ghost-storage-adapter-s3]: https://github.com/colinmeinke/ghost-storage-adapter-s3
