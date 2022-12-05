@@ -36,12 +36,12 @@ jobs:
     # 1.1) Compare versions
     - name: Check if update available
       id: check
-      uses: AzureSrv/docker-image-update-checker@main
+      uses: AzureSrv/docker-image-update-checker@v2
       with:
-        gh-user: ${{ secrets.GH_USERNAME }}
-        gh-token: ${{ secrets.GH_TOKEN }}
-        base-image: library/ghost:alpine
-        image: ghcr.io/azuresrv/posts-ghost:latest
+        ghcr_user: ${{ secrets.GH_USERNAME }}
+        ghcr_token: ${{ secrets.GH_TOKEN }}
+        upstream: library/ghost:alpine
+        target: ghcr.io/azuresrv/posts-ghost:latest
 
   # 2.) Update Builder
   update-builder:
