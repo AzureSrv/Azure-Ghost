@@ -93,3 +93,11 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         cache-from: type=gha
         cache-to: type=gha,mode=max
+
+    # 2.7) Notify Devs
+    - name: Notify Devs
+      id: notify-devs
+      uses: azuresrv/actions-discord-notifier@v1
+      with:
+        webhook: ${{ secrets.WEBHOOK }}
+        message: An automatic update to posts-ghost was just published! Check out the build logs for more information.
