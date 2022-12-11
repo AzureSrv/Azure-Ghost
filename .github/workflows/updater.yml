@@ -100,4 +100,4 @@ jobs:
       uses: azuresrv/actions-discord-notifier@v1
       with:
         webhook: ${{ secrets.WEBHOOK }}
-        message: An automatic update to posts-ghost was just published! Check out the build logs for more information.
+        message: An automatic update was just published with tags:\n\`\`\`${{join(fromJSON(steps.meta.outputs.json).tags,'\n')}}\`\`\`Check out the build logs for more information.
