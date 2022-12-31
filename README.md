@@ -1,6 +1,6 @@
 # Ghost (Posts Edition)
 
-![Test](https://img.shields.io/github/workflow/status/azuresrv/posts-ghost/Update%20From%20Upstream?logo=GitHub%20Actions&logoColor=white)
+![Test](https://img.shields.io/github/actions/workflow/status/azuresrv/posts-ghost/updater.yml?branch=main&logo=GitHub%20Actions&logoColor=white)
 
 This is my distribution of Ghost CMS, with my homelab's plugins compiled into it. it is based off of `ghost:alpine` and updates nightly at 4 AM if an upstream update is available.
 
